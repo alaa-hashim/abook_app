@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names, prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 import 'package:shared_preferences/shared_preferences.dart';
@@ -39,6 +41,6 @@ Locale _locale(String languageCode) {
   }
 }
 
-String getTranslated(BuildContext context, String key) {
-  return DemoLocalization.of(context).translate(key);
+String? getTranslated(BuildContext context, String key) {
+  return DemoLocalization.of(context)!.translate(key);
 }

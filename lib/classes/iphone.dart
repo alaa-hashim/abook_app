@@ -1,9 +1,9 @@
 class Iphone {
 
-  String image;
-  String name;
-  double price;
-  String description ;
+  String? image;
+  String? name;
+  double? price;
+  String? description ;
 
   Iphone({
     this.image,

@@ -1,11 +1,12 @@
-import 'package:flutter/material.dart';
+// ignore_for_file: file_names, prefer_const_constructors
 
+import 'package:flutter/material.dart';
 
 class AlreadyHaveAnAccountCheck extends StatelessWidget {
   final bool login;
-  final Function press;
+  final Function? press;
   const AlreadyHaveAnAccountCheck({
-    Key key,
+    Key? key,
     this.login = true,
     this.press,
   }) : super(key: key);
@@ -20,7 +21,7 @@ class AlreadyHaveAnAccountCheck extends StatelessWidget {
           style: TextStyle(color: Colors.black, fontSize: 17),
         ),
         GestureDetector(
-          onTap: press,
+          onTap: press as void Function()?,
           child: Text(
             login ? "Sign Up" : "Sign In",
             style: TextStyle(

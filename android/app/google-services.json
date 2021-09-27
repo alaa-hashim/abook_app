@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "833677383512",
+    "project_id": "my-app-64f87",
+    "storage_bucket": "my-app-64f87.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833677383512:android:649159b0cac1dd576ff72d",
+        "android_client_info": {
+          "package_name": "com.example.my_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833677383512-dtt547cm9afk2mm0l1d84t8775313635.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4ask_hiX_h0L0wfXVX-gyoIRxBLdAaXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "833677383512-dtt547cm9afk2mm0l1d84t8775313635.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833677383512:android:29ac9d0a897752756ff72d",
+        "android_client_info": {
+          "package_name": "com.letsshop_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833677383512-dtt547cm9afk2mm0l1d84t8775313635.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4ask_hiX_h0L0wfXVX-gyoIRxBLdAaXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "833677383512-dtt547cm9afk2mm0l1d84t8775313635.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

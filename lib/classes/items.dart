@@ -1,9 +1,9 @@
-import 'proudacts.dart';
+
 class Item {
-  String image;
-  String name;
-  double price;
-  String description ;
+  String? image;
+  String? name;
+  double? price;
+  String? description ;
   dynamic    images ;
 
 
@@ -16,6 +16,12 @@ class Item {
     this.images
   });
 }
+
+
+
+
+
+
 
 
 List<Item> items = [

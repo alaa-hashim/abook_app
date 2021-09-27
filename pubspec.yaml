@@ -1,0 +1,95 @@
+name: from_ui_app
+description: A new Flutter application.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+      sdk: flutter
+
+  shared_preferences: ^2.0.11
+  intl: ^0.17.0
+  source_gen:
+
+
+
+
+  cupertino_icons: ^1.0.1
+  introduction_screen: ^2.1.0
+  local_auth: ^1.1.4
+  firebase_core: ^1.7.0
+  firebase_auth: ^3.1.3
+  modal_progress_hud:  ^0.1.3
+  font_awesome_flutter: ^9.2.0
+  bottom_navy_bar: ^6.0.0
+  splash_screen_view: ^3.0.0
+  provider: ^6.0.1
+  http: any
+  carousel_slider: any
+  animations: any
+  google_fonts: any
+  localization: ^1.1.0
+  smooth_page_indicator: any
+  awesome_dialog: ^2.1.2
+  jiffy: ^5.0.0
+
+
+  image_picker: any 
+  cloud_functions: ^3.2.4
+  firebase_messaging: ^11.2.4
+  cloud_firestore: ^3.1.5
+  firebase_storage: ^10.2.4
+  google_sign_in: ^5.2.1
+
+
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.9.0
+  flutter_native_splash: ^1.0.3
+  flutter_test:
+    sdk: flutter
+  test: any
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+  generate: true
+  uses-material-design: true
+
+
+  assets:
+    - assets/
+    - assets/categories/
+    - assets/images/
+    - lib/lang/en.json
+    - lib/lang/fa.json
+    - lib/lang/ar.json
+    - lib/lang/hi.json
+
+  fonts:
+    - family: Oswald-VariableFont_wght.ttf
+      fonts:
+      - asset: assets/Fonts/Oswald-VariableFont_wght.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages

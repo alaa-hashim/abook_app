@@ -1,4 +1,5 @@
-import 'package:flutter/cupertino.dart';
+// ignore_for_file: camel_case_types, use_key_in_widget_constructors, prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:from_ui_app/classes/language.dart';
 import 'package:from_ui_app/localization/language_constants.dart';
@@ -26,29 +27,31 @@ class _localizationState extends State<localization> {
         backgroundColor: Colors.white,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(18.0),
-        child: Column(
-          crossAxisAlignment:CrossAxisAlignment.start ,
-          children: [
-            Text('Select Country',style: TextStyle(fontSize: 20),),
-            ListTile(
-              leading:  Text(
-              flag,
-              style: TextStyle(fontSize: 32),
+          padding: const EdgeInsets.all(18.0),
+          child:
+              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            Text(
+              'Select Country',
+              style: TextStyle(fontSize: 20),
             ),
-
-
-            ),
-            Divider(thickness: 3.0,),
             ListTile(
-              leading:  Text(
+              leading: Text(
                 flag,
                 style: TextStyle(fontSize: 32),
               ),
-
-
             ),
-            Divider(thickness: 3.0,),
+            Divider(
+              thickness: 3.0,
+            ),
+            ListTile(
+              leading: Text(
+                flag,
+                style: TextStyle(fontSize: 32),
+              ),
+            ),
+            Divider(
+              thickness: 3.0,
+            ),
             ListTile(
               title: Text('Language'),
               leading: DropdownButton<Language>(
@@ -57,38 +60,29 @@ class _localizationState extends State<localization> {
                   Icons.language,
                   color: Colors.blue,
                 ),
-    onChanged: (Language language) {
-    _changeLanguage(language);},
-                  items: Language.languageList()
-                  .map<DropdownMenuItem<Language>>(
-                    (e) => DropdownMenuItem<Language>(
-                  value: e,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: <Widget>[
-                      Text(
-                        e.flag,
-                        style: TextStyle(fontSize: 30),
+                onChanged: (Language? language) {
+                  _changeLanguage(language!);
+                },
+                items: Language.languageList()
+                    .map<DropdownMenuItem<Language>>(
+                      (e) => DropdownMenuItem<Language>(
+                        value: e,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: <Widget>[
+                            Text(
+                              e.flag,
+                              style: TextStyle(fontSize: 30),
+                            ),
+                            Text(e.name)
+                          ],
+                        ),
                       ),
-                      Text(e.name)
-                    ],
-                  ),
-                ),
-              )
-                  .toList(),
+                    )
+                    .toList(),
+              ),
             ),
-      ) ,
-
-          ]
-        )
-      ),
-
-
-        );
-
-
-
-
-
+          ])),
+    );
   }
 }

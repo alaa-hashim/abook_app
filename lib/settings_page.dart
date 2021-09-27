@@ -1,10 +1,12 @@
+// ignore_for_file: prefer_const_constructors_in_immutables, avoid_unnecessary_containers, prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'classes/language.dart';
 import 'localization/language_constants.dart';
 import 'main.dart';
 
 class SettingsPage extends StatefulWidget {
-  SettingsPage({Key key}) : super(key: key);
+  SettingsPage({Key? key}) : super(key: key);
 
   @override
   _SettingsPageState createState() => _SettingsPageState();
@@ -20,15 +22,15 @@ class _SettingsPageState extends State<SettingsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(getTranslated(context, 'settings')),
+        title: Text(getTranslated(context, 'settings')!),
       ),
       body: Container(
         child: Center(
             child: DropdownButton<Language>(
           iconSize: 30,
-          hint: Text(getTranslated(context, 'change_language')),
-          onChanged: (Language language) {
-            _changeLanguage(language);
+          hint: Text(getTranslated(context, 'change_language')!),
+          onChanged: (Language? language) {
+            _changeLanguage(language!);
           },
           items: Language.languageList()
               .map<DropdownMenuItem<Language>>(

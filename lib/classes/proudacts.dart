@@ -1,12 +1,11 @@
-import 'package:from_ui_app/classes/iphone.dart';
 
 class Proudact {
 
-  String image;
-  String name;
-  double price;
-  String description ;
-  List<Proudact> sonys;
+  String? image;
+  String? name;
+  double? price;
+  String? description ;
+  List<Proudact>? sonys;
 
   Proudact({
     this.image,
